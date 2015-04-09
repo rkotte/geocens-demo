@@ -1,0 +1,400 @@
+body {
+	margin: 0;
+	font-family: arial;
+	font-size: 14px;
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#menubar {
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	border-bottom: solid 2px lightgreen;
+}
+
+
+#logo {
+	background: url("../img/sensorup-logo.png") top left no-repeat;
+	position: fixed;
+	left: 12px;
+	top: 20px;
+	height: 94px;
+	width: 382px;
+	background-repeat: no-repeat;
+}
+
+#title {
+	background: lightseagreen;
+	position: fixed;
+	top: 102px;
+	left: 0;
+	width: 100%;
+	height: 52px;
+	font-size: 42px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-bottom: 6px;
+	border-bottom: solid 1px black;
+	text-align: left;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+#geocens {
+	background: url("../img/geocens-logo.jpg") center center no-repeat;
+	top: 150px;
+}
+
+#ogc {
+	background: url("../img/ogc-logo.jpg") center center no-repeat;
+	top: 235px;
+}
+
+#geocens, #ogc {
+	width: 275px;
+  	height: 75px;
+  	position: relative;  
+	margin: 0 auto 0 auto;
+	padding: 5 0 7 0;
+	border: solid 1px white;
+}
+
+#main{
+	position: fixed;
+	top: 161px;
+	overflow-y: scroll;
+	height: 85%;
+	width:  100%;
+	padding-top: 20px;
+}
+
+.sensorID {
+	display: inline-block;
+	border-bottom: solid 1px rgb(47, 27, 27);
+	padding: 10;
+	margin: 10;
+	font-size: 22px;
+	width: 120px;
+	border-radius: 5px;
+	text-align: center;
+	padding-right: 10px;
+	position: relative;
+	left:  69px;
+	top: -70px;
+	color: dodgerblue;
+}
+
+.sensoridparent {
+	display: block;
+	font-size: 42px;
+	font-weight: bold;
+	padding-left: 42px;
+}
+
+.index{
+	background: rgb(107, 157, 189);
+	padding: 8px;
+	box-shadow: 0px 2px 8px;
+	left: 9px;
+	display: block;
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 32px;
+	line-height: 45px;
+}
+
+.item
+{
+   	position: absolute;
+    font-weight: bold;
+    -webkit-touch-callout: initial;
+   	-webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+.itemTitle {
+    display: -webkit-inline-box;
+	
+}
+
+.itemItem{
+    display: -webkit-inline-box;
+
+}
+
+.itemBlock {
+	background: rgb(58, 130, 162);
+	width:  45px;
+	height:  50px;
+	font-size: 35px;
+	text-align: center;
+	line-height: 45px;
+	left: 20px;
+	position: absolute;
+	top:  16px;
+	color: white;
+}
+
+.itempath{
+    top: 275px;
+    left: 90px;
+}
+
+.itemlatitude{
+    top:  90px;
+    left: 240px;
+}
+.itemlongitude{
+    top: 90px;
+    left: 455px;
+}
+.itemtimestamp{
+    top: 90px;
+    left: 580px;
+}
+.itemvalue{
+    top: 210px;
+    left: 87px;
+    font-size: 18px;
+}
+.itemproperty{
+    top: 155px;
+    left: 325px;
+    font-size: 18px;
+}
+.itemoffering{
+    top: 155px;
+    left: 87px;
+    font-size: 18px;
+}
+.itemprocedure_id,itemnickName{
+    left: 75px;
+    top: 33px;
+    font-size: 22px;
+}
+.itemservice_url{
+    top: 210px;
+    left: 325px;
+    font-size: 18px;
+}
+
+.title
+ {
+    position: absolute;
+    color: cornflowerblue;
+}
+.titlepath{
+    top: 240px;
+    left:  80px;
+    font-size: 25px;
+}
+
+.titleprocedure_id,.titlenickName{
+    left: 75px;
+    top: 17px;
+}
+.titlelatitude{
+    top: 89px;
+    left: 150px;
+}
+.titlelongitude{
+    top: 90px;
+    left: 365px;
+}
+.titletimestamp,.titlelast_time_online{
+    left: 580px;
+    top: 67px;
+}
+.titlevalue{
+    top: 180px;
+    left: 77px;
+    font-size: 25px;
+}
+.titleproperty{
+    top: 125px;
+    left: 315px;
+    font-size: 25px;
+}
+.titleoffering{
+    top: 125px;
+    left: 77px;
+    font-size: 25px;
+}
+.titleservice_url{
+    top: 180px;
+    left: 315px;
+    font-size: 25px;
+}
+
+#line1, #line2{
+    position: relative;
+    left: 25px;
+    border-color: royalblue;
+    width: 90%;
+}
+#line1{
+    top: 95px;
+}
+#line2{
+    top: 263px;
+}
+
+#map1{
+    position: absolute;
+    top: 325px;
+    left: 120px;
+    width: 80%;
+    height: 400px;
+}
+.item0{
+    top: 140px;    
+    left: 690px;
+}
+.item1{
+    top: 165px;    
+    left: 690px;
+}
+.item2{
+    top: 190px;    
+    left: 690px;
+}
+.item3{
+    top: 215px;    
+    left: 690px;
+}
+.item4{
+    top: 240px;    
+    left: 690px;
+}
+.itemid{
+    top: 56px;    
+    left: 316px;
+}
+.itemuser{
+    top: 160px;    
+    left: 285px;
+}
+.itemuid{
+    top: 215px;    
+    left: 285px;
+}
+.itemaltitude{
+    top: 160px;    
+    left: 95px;
+}
+.itemsamplingrate{
+    top: 215px;    
+    left: 95px;
+}
+.itemheight{
+    top: 265px;    
+    left: 95px;
+}
+.itemnickName{
+    top: 32px;    
+    left: 75px;
+    font-size: 24px;
+}
+.itemdescription{
+    top: 270px;    
+    left: 285px;
+}
+.itemlast_time_online
+{
+    top: 89px;    
+    left: 587px;
+}
+.title0{
+    top: 140px;
+    left: 675px;
+}
+.title1{
+    top: 165px;
+    left: 675px;
+}
+.title2{
+    top: 190px;    
+    left: 675px;;
+}
+.title3{
+    top: 215px;    
+    left: 675px;;
+}
+.title4{
+    top: 240px;    
+    left: 675px;;
+}
+.titleid{
+    top: 55px;
+    left: 290px;
+}
+.titleuser{
+    top: 140px;    
+    left: 275px;
+}
+.titleuid{
+    top: 190px;    
+    left: 275px;
+}
+.titlealtitude{
+    top: 140px;    
+    left: 85px;
+}
+.titlesamplingrate{
+    top: 190px;
+    left: 85px;
+}
+.titleheight{
+    top: 240px;
+    left: 85px;
+}
+.titledescription{
+    top: 240px;    
+    left: 275px;
+}
+.titletitle{
+    top: 30px;    
+    left: 290px;
+}
+.itemtitle{
+    top: 30px;    
+    left: 327px;
+}
+.titleenvironment_type{
+    top: 30px;    
+    left: 450px;
+}
+.itemenvironment_type{
+    top: 30px;
+    left: 585px;
+}
+
+#title:hover {
+	background: rgb(32, 178, 136);
+	cursor: pointer;
+}
+.sources:hover{
+	border-radius: 10px;
+	box-shadow: 4px 4px 15px grey;
+	cursor: pointer;
+}
+
+.sensorID:hover {
+	background: rgba(228, 228, 228, 0.15);
+	box-shadow: 4px 4px 15px grey;
+	color: rgb(35, 65, 194);
+	cursor: pointer;
+}
